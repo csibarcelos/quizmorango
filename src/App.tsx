@@ -742,12 +742,63 @@ function App() {
                 </div>
 
                 {/* CTA Button */}
-                <div className="text-center mb-8">
+                <div className="text-center mb-8 space-y-4">
                   <button
-                    onClick={() => window.open('https://app.1checkout.com.br/checkout/3f55d56d-4c8d-486a-add9-eadf29e65c93', '_blank')}
-                    className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-6 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl animate-pulse"
+                    onClick={() => {
+                      const baseUrl = 'https://app.1checkout.com.br/checkout/3f55d56d-4c8d-486a-add9-eadf29e65c93';
+                      const currentUrlParams = new URLSearchParams(window.location.search);
+                      const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+                      const newUrl = new URL(baseUrl);
+
+                      utmParams.forEach(param => {
+                        if (currentUrlParams.has(param)) {
+                          newUrl.searchParams.set(param, currentUrlParams.get(param)!);
+                        }
+                      });
+
+                      window.location.href = newUrl.toString();
+                    }}
+                    className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-6 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl animate-pulse"
                   >
                     🚀 Começar a Lucrar Agora
+                  </button>
+                  <button
+                    onClick={() => {
+                      const baseUrl = 'https://app.1checkout.com.br/checkout/3f55d56d-4c8d-486a-add9-eadf29e65c93';
+                      const currentUrlParams = new URLSearchParams(window.location.search);
+                      const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+                      const newUrl = new URL(baseUrl);
+
+                      utmParams.forEach(param => {
+                        if (currentUrlParams.has(param)) {
+                          newUrl.searchParams.set(param, currentUrlParams.get(param)!);
+                        }
+                      });
+
+                      window.location.href = newUrl.toString();
+                    }}
+                    className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-6 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl"
+                  >
+                    ✅ Sim! Quero Minha Vaga!
+                  </button>
+                  <button
+                    onClick={() => {
+                      const baseUrl = 'https://app.1checkout.com.br/checkout/3f55d56d-4c8d-486a-add9-eadf29e65c93';
+                      const currentUrlParams = new URLSearchParams(window.location.search);
+                      const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+                      const newUrl = new URL(baseUrl);
+
+                      utmParams.forEach(param => {
+                        if (currentUrlParams.has(param)) {
+                          newUrl.searchParams.set(param, currentUrlParams.get(param)!);
+                        }
+                      });
+
+                      window.location.href = newUrl.toString();
+                    }}
+                    className="w-full bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold py-6 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl"
+                  >
+                    🔥 Últimas Vagas! Garanta Já!
                   </button>
                 </div>
 
@@ -817,7 +868,20 @@ function App() {
               <div className="space-y-4">
                 <button 
                   className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-bold py-4 px-6 rounded-2xl"
-                  onClick={() => window.open('https://app.1checkout.com.br/checkout/3f55d56d-4c8d-486a-add9-eadf29e65c93', '_blank')}
+                  onClick={() => {
+                    const baseUrl = 'https://app.1checkout.com.br/checkout/3f55d56d-4c8d-486a-add9-eadf29e65c93';
+                    const currentUrlParams = new URLSearchParams(window.location.search);
+                    const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+                    const newUrl = new URL(baseUrl);
+
+                    utmParams.forEach(param => {
+                      if (currentUrlParams.has(param)) {
+                        newUrl.searchParams.set(param, currentUrlParams.get(param)!);
+                      }
+                    });
+
+                    window.location.href = newUrl.toString();
+                  }}
                 >
                   💳 Garantir Minha Vaga - R$ 39,99
                 </button>
