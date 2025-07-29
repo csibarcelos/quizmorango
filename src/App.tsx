@@ -742,7 +742,7 @@ function App() {
                 </div>
 
                 {/* CTA Button */}
-                <div className="text-center mb-8 space-y-4">
+                <div className="text-center mb-8 flex flex-col md:flex-row justify-center items-center gap-4">
                   <button
                     onClick={() => {
                       const baseUrl = 'https://app.1checkout.com.br/checkout/3f55d56d-4c8d-486a-add9-eadf29e65c93';
@@ -758,7 +758,7 @@ function App() {
 
                       window.location.href = newUrl.toString();
                     }}
-                    className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-6 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl animate-pulse"
+                    className="w-full md:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-6 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl animate-pulse"
                   >
                     🚀 Começar a Lucrar Agora
                   </button>
@@ -777,7 +777,7 @@ function App() {
 
                       window.location.href = newUrl.toString();
                     }}
-                    className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-6 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl"
+                    className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-6 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl"
                   >
                     ✅ Sim! Quero Minha Vaga!
                   </button>
@@ -796,7 +796,7 @@ function App() {
 
                       window.location.href = newUrl.toString();
                     }}
-                    className="w-full bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold py-6 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl"
+                    className="w-full md:w-auto bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold py-6 px-12 rounded-2xl text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl"
                   >
                     🔥 Últimas Vagas! Garanta Já!
                   </button>
